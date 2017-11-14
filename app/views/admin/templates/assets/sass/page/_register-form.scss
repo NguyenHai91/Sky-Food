@@ -1,0 +1,17 @@
+.register-form {
+	.cancel-btn, .res-btn{
+		.btn {
+			width: 100%;
+		}
+	}
+	.cancel-btn {
+		padding-right: 10%;
+		a {
+			background: $color-red !important;
+			border-color: $color-red !important;
+		}
+	}
+	.res-btn {
+		padding-left: 10%;
+	}
+}

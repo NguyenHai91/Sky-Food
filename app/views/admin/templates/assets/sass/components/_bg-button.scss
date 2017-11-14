@@ -1,0 +1,10 @@
+.bg-button {
+	padding: 3px 10px;	
+	color: $color-white !important;
+	background: $main-color !important;
+	border-color: $main-color !important;
+	&:hover {
+		background: $hover-main-color !important;
+	    border-color: $hover-main-color !important;
+	}
+}

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Sky Food</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet" />
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="index.html" class="simple-text">Sky Food</a>
+                </div>
+                <ul class="nav">
+                    <li class="active">
+                        <a  href="post.html">
+                            <i class="pe-7s-note2"></i>
+                            <p>QL bài đăng</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <i class="pe-7s-user"></i>
+                            <p>QL user</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="categories.html">
+                            <i class="pe-7s-news-paper"></i>
+                            <p>QL danh mục</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedbacks.html">
+                            <i class="pe-7s-back-2"></i>
+                            <p>QL phản hồi</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="statistics.html">
+                            <i class="pe-7s-graph1"></i>
+                            <p>QL thống kê</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-default navbar-fixed">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">QL BÀI ĐĂNG</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span><img src="assets/img/user.png" alt=""></span>
+                                Hiếu Trần
+                                <b class="caret"></b>
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="edit-user.html"><i class="fa fa-user"></i>Profile</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i>Log out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="content edit-post">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">Thêm bài đăng</h4>
+                                </div>
+                                <div class="content">
+                                    <form data-toggle="validator" role="form">
+                                        <div class="col-md-7">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="form-group">
+                                                        <label for="place" class="control-label">Place's name (<span>*</span>)</label>
+                                                        <input type="text" class="form-control" id="place" placeholder="Tên địa điểm" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="phone" class="control-label">Phone (<span>*</span>)</label>
+                                                        <input type="number" class="form-control" id="phone" placeholder="Số điện thoại" required data-error="Vui lòng nhập số vào">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="discount" class="control-label">Discount (<span>*</span>)</label>
+                                                        <input type="text" class="form-control" id="discount" placeholder="Khuyến mãi" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="type">Type (<span>*</span>)</label>
+                                                        <select class="form-control" id="type">
+                                                            <option>[Chọn]</option>
+                                                            <option>Ăn vặt</option>
+                                                            <option>Coffee</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="city" class="control-label">City (<span>*</span>)</label>
+                                                        <input type="text" class="form-control" id="city" placeholder="Thành phố" value="Đà Nẵng" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Địa chỉ (<span>*</span>)</label>
+                                                        <input id="pac-input" type="text" class="form-control" placeholder="Address" value="" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="lat" class="control-label">Latitude</label>
+                                                        <input type="text" class="form-control" id="lat" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="lung" class="control-label">Lungtide</label>
+                                                        <input type="text" class="form-control" id="lung" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="openTime" class="control-label">Open time (<span>*</span>)</label>
+                                                        <input type="text" class="form-control" placeholder="Giờ mở cửa" value="" id="openTime" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="closeTime" class="control-label">Close time (<span>*</span>)</label>
+                                                        <input type="text" class="form-control" placeholder="Giờ đóng cửa" value="" id="closeTime" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="price">Price (<span>*</span>)</label>
+                                                        <input type="text" class="form-control" placeholder="Mức giá ( VD: 2000đ - 50000đ )" value="" id="price" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                     <div class="form-group">
+                                                        <label>Detail</label>
+                                                        <textarea rows="5" class="form-control" placeholder="Chi tiết địa điểm" value=""></textarea required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-md-push-1 wrp-card">
+                                            <div class="card card-user">
+                                                <div class="content">
+                                                    <div class="author">
+                                                        <div>
+                                                            <img class="avatar border-gray" src="assets/img/res2.jpg" alt="..." />
+                                                        </div>
+                                                        <div class="edit-avatar ">
+                                                            <div class="wrp file bg-button">
+                                                                <i class="pe-7s-cloud-upload"></i>Upload
+                                                                <input type="file" name="file" />
+                                                            </div>
+                                                        </div>
+                                                        <h4 class="title">The Coffee House<br />
+                                                        <small>0905594382</small>
+                                                    </h4>
+                                                    </div>
+                                                    <p class="description text-center">
+                                                        "Lamborghini Merce Your chick she so thirsty I'm in that two seat Lambo"
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <div id="map" class="form-group"></div>
+                                                <div id="infowindow-content">
+                                                    <img src="" width="16" height="16" id="place-icon">
+                                                    <span id="place-name" class="title"></span>
+                                                    <br>
+                                                    <span id="place-address"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn bg-button btn-fill pull-left">Hoàn thành</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <p class="copyright pull-right">
+                        &copy; 2017 <a href="http://www.creative-tim.com">Sky Food</a> is the best.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/validator.min.js"></script>
+<!--  Checkbox, Radio & Switch Plugins -->
+<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
+<!--  Charts Plugin -->
+<script src="assets/js/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script src="assets/js/light-bootstrap-dashboard.js"></script>
+<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+<script src="assets/js/demo.js" type="text/javascript"></script>
+<script src="assets/js/mapPost.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbJTv1mpf9Tm1fWBip0XKIuE1tBcv9GMc&libraries=places&callback=initMap" async defer></script>
+</html>
